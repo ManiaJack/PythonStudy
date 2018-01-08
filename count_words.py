@@ -11,6 +11,7 @@ import re
 
 def count_words(strings, keywords):
     word_number = 0
+    # 对每个关键词正则匹配并计数
     for words in keywords:
         re_rule = '.*' + words
         if re.match(re_rule, strings.lower()):
