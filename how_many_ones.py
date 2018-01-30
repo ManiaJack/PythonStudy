@@ -8,8 +8,7 @@ __author__ = 'ManiaJack'
 
 def how_many_ones(num):
     string = ''
-    while num > 1:
+    while num > 0:
         string += str(num % 2)
         num //= 2
-    string += '1'
     return string.count('1')
